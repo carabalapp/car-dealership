@@ -61,6 +61,9 @@ $ npm run test:cov
 
 ## Curls para probar cada endpoint
 
+# Lo primero que debemos ejecutar es el endpoint de los seeds para llenar nuestros cars y brands
+$ curl --location 'http://localhost:3000/seed'
+
 # Obtener todos los carros ( esto nos dara los UUID con los que podemos trabajar los demas endpoints, EJ: Actualizar, eliminar, encontrar un carro por su UUID )
 $ curl --location 'http://localhost:3000/cars'
 
